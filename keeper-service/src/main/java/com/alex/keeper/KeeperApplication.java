@@ -1,12 +1,13 @@
 package com.alex.keeper;
 
-import org.springframework.beans.factory.config.BeanPostProcessor;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
+import org.springframework.data.mongodb.repository.config.EnableReactiveMongoRepositories;
 
-import java.util.TreeMap;
-
+@EnableEurekaClient
 @SpringBootApplication
+@EnableReactiveMongoRepositories
 public class KeeperApplication {
 
     public static void main(String[] args) {

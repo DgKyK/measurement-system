@@ -15,7 +15,5 @@ public class Measurement {
 
     private Double temperature;
     private Double humidity;
-
-    @CreatedDate
     private LocalDateTime createdDate;
 }
