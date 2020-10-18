@@ -5,6 +5,7 @@ import com.alex.keeper.repository.MeasurementRepository;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import reactor.core.Disposable;
 import reactor.core.publisher.Flux;
 
 @Service
@@ -16,7 +17,8 @@ public class MeasurementService {
 
     public void saveMeasurement(Measurement measurement) {
         measurementRepository.save(measurement).subscribe();
-        log.info("Measurement: " + measurement + "was saved"); //TODO replace for real saved Mono<> that was returned from MongoDB
+        log.info("Measurement: temperature=" + measurement.getTemperature() +
+                " | humidity= " + measurement.getHumidity() + " was saved");
     }
 
     public Flux<Measurement> getAllMeasurements(){

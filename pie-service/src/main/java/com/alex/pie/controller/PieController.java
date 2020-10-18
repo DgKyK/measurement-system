@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.reactive.function.client.WebClient;
 import org.springframework.web.util.UriBuilder;
+import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
 import java.time.LocalDateTime;
@@ -28,5 +29,14 @@ public class PieController {
                 .body(Mono.just(measurement), Measurement.class)
                 .retrieve()
                 .bodyToMono(Measurement.class);
+    }
+
+    @RequestMapping(method = RequestMethod.GET, value = "/measurements")
+    public Flux<Measurement> getAllMeasurements() {
+        return webClient.build()
+                .get()
+                .uri("http://KEEPER-SERVICE/measurements")
+                .retrieve()
+                .bodyToFlux(Measurement.class);
     }
 }
