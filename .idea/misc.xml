@@ -4,6 +4,7 @@
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/discovery-server" />
     <file type="web" url="file://$PROJECT_DIR$/keeper-service" />
+    <file type="web" url="file://$PROJECT_DIR$/pie-service" />
   </component>
   <component name="ProjectRootManager" version="2" project-jdk-name="11" project-jdk-type="JavaSDK" />
 </project>
