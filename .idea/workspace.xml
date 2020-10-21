@@ -5,12 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5713c9ea-36b4-485d-b71b-ae49a9f42497" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/pie-service/src/main/java/com/alex/pie/config/RibbonConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/keeper-service/src/main/java/com/alex/keeper/service/CheckMeasurementService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/application.log.2020-10-19.0.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/application.log.2020-10-20.0.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pie-service/src/main/java/com/alex/pie/service/SenderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/keeper-service/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/keeper-service/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/keeper-service/src/main/java/com/alex/keeper/service/MeasurementService.java" beforeDir="false" afterPath="$PROJECT_DIR$/keeper-service/src/main/java/com/alex/keeper/service/MeasurementService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pie-service/src/main/java/com/alex/pie/PieApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/pie-service/src/main/java/com/alex/pie/PieApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/keeper-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/keeper-service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pie-service/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/pie-service/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pie-service/src/main/java/com/alex/pie/controller/PieController.java" beforeDir="false" afterPath="$PROJECT_DIR$/pie-service/src/main/java/com/alex/pie/controller/PieController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pie-service/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pie-service/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pie-service/src/main/java/com/alex/pie/domain/Measurement.java" beforeDir="false" afterPath="$PROJECT_DIR$/pie-service/src/main/java/com/alex/pie/domain/Measurement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pie-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/pie-service/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,23 +47,7 @@
         </task>
         <projects_view>
           <tree_state>
-            <expand>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="keeper" type="f1a62948:ProjectNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="keeper" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="keeper" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="build" type="c8890929:TasksNode$1" />
-              </path>
-            </expand>
+            <expand />
             <select />
           </tree_state>
         </projects_view>
@@ -98,9 +90,14 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+    <property name="restartRequiresConfirmation" value="false" />
+  </component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
   </component>
   <component name="RunDashboard">
     <option name="configurationTypes">
@@ -109,16 +106,14 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.keeper-service [assemble]">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+  <component name="RunManager" selected="Spring Boot.PieApplication">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -197,10 +192,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.PieApplication" />
-        <item itemvalue="Gradle.keeper-service [assemble]" />
         <item itemvalue="Spring Boot.KeeperApplication" />
         <item itemvalue="Spring Boot.ZuulServiceApplication" />
         <item itemvalue="Spring Boot.EurekaApplication" />
+        <item itemvalue="Gradle.keeper-service [assemble]" />
       </list>
     </recent_temporary>
   </component>
@@ -213,7 +208,8 @@
       <option name="presentableId" value="Default" />
       <updated>1603055585111</updated>
       <workItem from="1603055586242" duration="458000" />
-      <workItem from="1603056067822" duration="4703000" />
+      <workItem from="1603056067822" duration="5622000" />
+      <workItem from="1603204312739" duration="15061000" />
     </task>
     <task id="LOCAL-00001" summary="Measurement-system&#10;&#10;- add zuul-service like api-gateway&#10;- add appropriate routes for all services &#10;- add config for zuul&#10;- add endpoint for streaming data in keeper-service">
       <created>1603056424146</created>
@@ -222,7 +218,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603056424146</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Measurement-system&#10;&#10;- add ribbon for load balancing between instances&#10;- add ribbon config &#10;- add endpoint to pie service get measures from keeper-s">
+      <created>1603061934407</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1603061934407</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -231,56 +234,85 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Measurement-system&#10;&#10;- add zuul-service like api-gateway&#10;- add appropriate routes for all services &#10;- add config for zuul&#10;- add endpoint for streaming data in keeper-service" />
-    <option name="LAST_COMMIT_MESSAGE" value="Measurement-system&#10;&#10;- add zuul-service like api-gateway&#10;- add appropriate routes for all services &#10;- add config for zuul&#10;- add endpoint for streaming data in keeper-service" />
+    <MESSAGE value="Measurement-system&#10;&#10;- add ribbon for load balancing between instances&#10;- add ribbon config &#10;- add endpoint to pie service get measures from keeper-s" />
+    <option name="LAST_COMMIT_MESSAGE" value="Measurement-system&#10;&#10;- add ribbon for load balancing between instances&#10;- add ribbon config &#10;- add endpoint to pie service get measures from keeper-s" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="345" y="0" key="CommitChangelistDialog2" timestamp="1603056423325">
+    <state x="345" y="0" key="CommitChangelistDialog2" timestamp="1603061933828">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="345" y="0" key="CommitChangelistDialog2/0.0.1536.824/0.-1200.1920.1160@0.0.1536.824" timestamp="1603056423325" />
-    <state width="1024" height="218" key="GridCell.Tab.0.bottom" timestamp="1603061476670">
+    <state x="345" y="0" key="CommitChangelistDialog2/0.0.1536.824/0.-1200.1920.1160@0.0.1536.824" timestamp="1603061933828" />
+    <state x="133" y="65" key="DiffContextDialog" timestamp="1603061903140">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1024" height="218" key="GridCell.Tab.0.bottom/0.0.1536.824/0.-1200.1920.1160@0.0.1536.824" timestamp="1603061476670" />
-    <state width="1024" height="218" key="GridCell.Tab.0.center" timestamp="1603061476670">
+    <state x="133" y="65" key="DiffContextDialog/0.0.1536.824/0.-1200.1920.1160@0.0.1536.824" timestamp="1603061903140" />
+    <state width="1163" height="171" key="GridCell.Tab.0.bottom" timestamp="1603285503599">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1024" height="218" key="GridCell.Tab.0.center/0.0.1536.824/0.-1200.1920.1160@0.0.1536.824" timestamp="1603061476670" />
-    <state width="1024" height="218" key="GridCell.Tab.0.left" timestamp="1603061476670">
+    <state width="1163" height="171" key="GridCell.Tab.0.bottom/0.0.1536.824/0.-1200.1920.1160@0.0.1536.824" timestamp="1603285503599" />
+    <state width="1163" height="171" key="GridCell.Tab.0.center" timestamp="1603285503598">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1024" height="218" key="GridCell.Tab.0.left/0.0.1536.824/0.-1200.1920.1160@0.0.1536.824" timestamp="1603061476670" />
-    <state width="1024" height="218" key="GridCell.Tab.0.right" timestamp="1603061476670">
+    <state width="1163" height="171" key="GridCell.Tab.0.center/0.0.1536.824/0.-1200.1920.1160@0.0.1536.824" timestamp="1603285503598" />
+    <state width="1163" height="171" key="GridCell.Tab.0.left" timestamp="1603285503598">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1024" height="218" key="GridCell.Tab.0.right/0.0.1536.824/0.-1200.1920.1160@0.0.1536.824" timestamp="1603061476670" />
-    <state width="1024" height="218" key="GridCell.Tab.1.bottom" timestamp="1603061476670">
+    <state width="1163" height="171" key="GridCell.Tab.0.left/0.0.1536.824/0.-1200.1920.1160@0.0.1536.824" timestamp="1603285503598" />
+    <state width="1163" height="171" key="GridCell.Tab.0.right" timestamp="1603285503599">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1024" height="218" key="GridCell.Tab.1.bottom/0.0.1536.824/0.-1200.1920.1160@0.0.1536.824" timestamp="1603061476670" />
-    <state width="1024" height="218" key="GridCell.Tab.1.center" timestamp="1603061476670">
+    <state width="1163" height="171" key="GridCell.Tab.0.right/0.0.1536.824/0.-1200.1920.1160@0.0.1536.824" timestamp="1603285503599" />
+    <state width="1163" height="171" key="GridCell.Tab.1.bottom" timestamp="1603285503600">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1024" height="218" key="GridCell.Tab.1.center/0.0.1536.824/0.-1200.1920.1160@0.0.1536.824" timestamp="1603061476670" />
-    <state width="1024" height="218" key="GridCell.Tab.1.left" timestamp="1603061476670">
+    <state width="1163" height="171" key="GridCell.Tab.1.bottom/0.0.1536.824/0.-1200.1920.1160@0.0.1536.824" timestamp="1603285503600" />
+    <state width="1163" height="171" key="GridCell.Tab.1.center" timestamp="1603285503600">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1024" height="218" key="GridCell.Tab.1.left/0.0.1536.824/0.-1200.1920.1160@0.0.1536.824" timestamp="1603061476670" />
-    <state width="1024" height="218" key="GridCell.Tab.1.right" timestamp="1603061476670">
+    <state width="1163" height="171" key="GridCell.Tab.1.center/0.0.1536.824/0.-1200.1920.1160@0.0.1536.824" timestamp="1603285503600" />
+    <state width="1163" height="171" key="GridCell.Tab.1.left" timestamp="1603285503599">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1024" height="218" key="GridCell.Tab.1.right/0.0.1536.824/0.-1200.1920.1160@0.0.1536.824" timestamp="1603061476670" />
+    <state width="1163" height="171" key="GridCell.Tab.1.left/0.0.1536.824/0.-1200.1920.1160@0.0.1536.824" timestamp="1603285503599" />
+    <state width="1163" height="171" key="GridCell.Tab.1.right" timestamp="1603285503600">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1163" height="171" key="GridCell.Tab.1.right/0.0.1536.824/0.-1200.1920.1160@0.0.1536.824" timestamp="1603285503600" />
+    <state width="1147" height="559" key="GridCell.Tab.2.bottom" timestamp="1603210027980">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1147" height="559" key="GridCell.Tab.2.bottom/0.0.1536.824/0.-1200.1920.1160@0.0.1536.824" timestamp="1603210027980" />
+    <state width="1147" height="559" key="GridCell.Tab.2.center" timestamp="1603210027980">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1147" height="559" key="GridCell.Tab.2.center/0.0.1536.824/0.-1200.1920.1160@0.0.1536.824" timestamp="1603210027980" />
+    <state width="1147" height="559" key="GridCell.Tab.2.left" timestamp="1603210027980">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1147" height="559" key="GridCell.Tab.2.left/0.0.1536.824/0.-1200.1920.1160@0.0.1536.824" timestamp="1603210027980" />
+    <state width="1147" height="559" key="GridCell.Tab.2.right" timestamp="1603210027980">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1147" height="559" key="GridCell.Tab.2.right/0.0.1536.824/0.-1200.1920.1160@0.0.1536.824" timestamp="1603210027980" />
+    <state x="497" y="115" key="RollbackChangesDialog" timestamp="1603212004343">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="497" y="115" key="RollbackChangesDialog/0.0.1536.824/0.-1200.1920.1160@0.0.1536.824" timestamp="1603212004343" />
     <state x="249" y="0" key="SettingsEditor" timestamp="1603055723338">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="249" y="0" key="SettingsEditor/0.0.1536.824/0.-1200.1920.1160@0.0.1536.824" timestamp="1603055723338" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1603061939396">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824/0.-1200.1920.1160@0.0.1536.824" timestamp="1603061939396" />
     <state x="478" y="11" width="579" height="801" key="find.popup" timestamp="1603058364822">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="478" y="11" width="579" height="801" key="find.popup/0.0.1536.824/0.-1200.1920.1160@0.0.1536.824" timestamp="1603058364822" />
-    <state x="360" y="73" key="new project wizard" timestamp="1603057258687">
+    <state x="360" y="73" key="new project wizard" timestamp="1603211330959">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="360" y="73" key="new project wizard/0.0.1536.824/0.-1200.1920.1160@0.0.1536.824" timestamp="1603057258687" />
+    <state x="360" y="73" key="new project wizard/0.0.1536.824/0.-1200.1920.1160@0.0.1536.824" timestamp="1603211330959" />
   </component>
 </project>
