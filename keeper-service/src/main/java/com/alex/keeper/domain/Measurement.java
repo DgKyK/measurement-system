@@ -21,6 +21,7 @@ public class Measurement {
     private String id;
     private Double temperature;
     private Double humidity;
+    private String location;
     @NotNull
     private LocalDateTime createdDate;
 }

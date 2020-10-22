@@ -15,7 +15,9 @@ import java.time.LocalDateTime;
 @AllArgsConstructor
 public class Measurement {
 
+    private String id;
     private Double temperature;
     private Double humidity;
+    private String location;
     private LocalDateTime createdDate;
 }
