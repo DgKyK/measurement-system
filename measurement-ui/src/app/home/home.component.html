@@ -1,22 +1,37 @@
 <!--<h1>{{ measurement }}</h1>-->
-<table class="table table-striped">
-  <thead>
-  <tr>
-    <th>Id</th>
-    <th>Temperature</th>
-    <th>Humidity</th>
-  </tr>
-  </thead>
-  <tbody>
-  <tr *ngFor="let m of measurement">
-    <td>{{m.id}}</td>
-    <td>{{m.temperature}}</td>
-    <td>{{m.humidity}}</td>
-  </tr>
-  </tbody>
-</table>
-<!-- this creates a google map on the page with the given lat/lng from -->
-<!-- the component as the initial center of the map: -->
-<agm-map [latitude]="lat" [longitude]="lng">
-  <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
-</agm-map>
+<div id="main">
+  <!--<div id="list">
+    <table class="table table-striped">
+      <thead>
+      <tr>
+        <th>Id</th>
+        <th>Temperature</th>
+        <th>Humidity</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let m of measurement">
+        <td>{{m.id}}</td>
+        <td>{{m.temperature}}</td>
+        <td>{{m.humidity}}</td>
+      </tr>
+      </tbody>
+    </table>
+  </div>-->
+  <!-- this creates a google map on the page with the given lat/lng from -->
+  <!-- the component as the initial center of the map: -->
+  <div id="google_map">
+    <agm-map [latitude]="lat" [longitude]="lng" [zoom]="zoom">
+      <agm-marker
+        *ngFor="let m of markers; let i = index"
+        (markerClick)="clickedMarker(m.lat, m.lng)"
+        [latitude]="m.lat"
+        [longitude]="m.lng">
+
+<!--        <agm-info-window>-->
+<!--          <strong>InfoWindow content</strong>-->
+<!--        </agm-info-window>-->
+      </agm-marker>
+    </agm-map>
+  </div>
+</div>

@@ -4,3 +4,11 @@ agm-map {
   position: fixed;
   right: 50px;
 }
+
+list {
+  position: fixed;
+  top: 80px;
+  left: 10px;
+  overflow: scroll;
+  padding-left: 150px;
+}

@@ -5,27 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5713c9ea-36b4-485d-b71b-ae49a9f42497" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/logs/application.log.2020-10-21.0.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/measurement-ui/src/app/apicall.service.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/measurement-ui/src/app/apicall.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/measurement-ui/src/app/home/home.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/measurement-ui/src/app/home/home.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/measurement-ui/src/app/home/home.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/measurement-ui/src/app/home/home.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/measurement-ui/src/app/home/measurement.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zuul-service/src/main/resources/static/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/keeper-service/src/main/java/com/alex/keeper/controller/MeasurementController.java" beforeDir="false" afterPath="$PROJECT_DIR$/keeper-service/src/main/java/com/alex/keeper/controller/MeasurementController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/keeper-service/src/main/java/com/alex/keeper/domain/Measurement.java" beforeDir="false" afterPath="$PROJECT_DIR$/keeper-service/src/main/java/com/alex/keeper/domain/Measurement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/measurement-ui/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/measurement-ui/angular.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/measurement-ui/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/measurement-ui/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/measurement-ui/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/measurement-ui/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/measurement-ui/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/measurement-ui/src/app/app-routing.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/measurement-ui/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/measurement-ui/src/app/app.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/measurement-ui/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/measurement-ui/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/measurement-ui/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/measurement-ui/src/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/measurement-ui/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/measurement-ui/src/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pie-service/src/main/java/com/alex/pie/domain/Measurement.java" beforeDir="false" afterPath="$PROJECT_DIR$/pie-service/src/main/java/com/alex/pie/domain/Measurement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/measurement-ui/src/app/apicall.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/measurement-ui/src/app/apicall.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/measurement-ui/src/app/home/home.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/measurement-ui/src/app/home/home.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/measurement-ui/src/app/home/home.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/measurement-ui/src/app/home/home.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/measurement-ui/src/app/home/home.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/measurement-ui/src/app/home/home.component.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,19 +104,6 @@
     </option>
   </component>
   <component name="RunManager" selected="npm.Angular CLI Server (measurement-ui)">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="keeper-service [assemble]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -227,9 +198,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.KeeperApplication" />
         <item itemvalue="Spring Boot.ZuulServiceApplication" />
         <item itemvalue="Spring Boot.PieApplication" />
+        <item itemvalue="Spring Boot.KeeperApplication" />
         <item itemvalue="Spring Boot.EurekaApplication" />
         <item itemvalue="Gradle.keeper-service [assemble]" />
       </list>
@@ -248,7 +219,8 @@
       <workItem from="1603204312739" duration="19294000" />
       <workItem from="1603308978357" duration="2626000" />
       <workItem from="1603381463515" duration="3233000" />
-      <workItem from="1603384740165" duration="17191000" />
+      <workItem from="1603384740165" duration="17611000" />
+      <workItem from="1603457501709" duration="7349000" />
     </task>
     <task id="LOCAL-00001" summary="Measurement-system&#10;&#10;- add zuul-service like api-gateway&#10;- add appropriate routes for all services &#10;- add config for zuul&#10;- add endpoint for streaming data in keeper-service">
       <created>1603056424146</created>
@@ -278,7 +250,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603316068662</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Measurement-system&#10;&#10;- add angular material desine &#10;- add google maps support &#10;- add get request for all measurements">
+      <created>1603404209398</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1603404209398</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -290,59 +269,60 @@
     <MESSAGE value="Measurement-system&#10;&#10;- add ribbon for load balancing between instances&#10;- add ribbon config &#10;- add endpoint to pie service get measures from keeper-s" />
     <MESSAGE value="Measurement-system&#10;&#10;- add spring cloud stream kafka &#10;- add all appropriate configuration for kafka &#10;- add docker compose file for setting up Kafka and Zookeeper in docker containers&#10;- start changing the way of microservice communication" />
     <MESSAGE value="Measurement-system&#10;&#10;- start working on UI" />
-    <option name="LAST_COMMIT_MESSAGE" value="Measurement-system&#10;&#10;- start working on UI" />
+    <MESSAGE value="Measurement-system&#10;&#10;- add angular material desine &#10;- add google maps support &#10;- add get request for all measurements" />
+    <option name="LAST_COMMIT_MESSAGE" value="Measurement-system&#10;&#10;- add angular material desine &#10;- add google maps support &#10;- add get request for all measurements" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="351" y="0" width="1046" height="824" key="CommitChangelistDialog2" timestamp="1603316067913">
+    <state x="351" y="0" width="1046" height="824" key="CommitChangelistDialog2" timestamp="1603404208589">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="121" y="0" width="1046" height="824" key="CommitChangelistDialog2/0.0.1536.824/0.-1200.1920.1160@0.0.1536.824" timestamp="1603286419151" />
-    <state x="351" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1603316067913" />
+    <state x="351" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1603404208589" />
     <state x="133" y="65" key="DiffContextDialog" timestamp="1603315949429">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="133" y="65" key="DiffContextDialog/0.0.1536.824/0.-1200.1920.1160@0.0.1536.824" timestamp="1603061903140" />
     <state x="133" y="65" key="DiffContextDialog/0.0.1536.824@0.0.1536.824" timestamp="1603315949429" />
-    <state width="1163" height="376" key="GridCell.Tab.0.bottom" timestamp="1603403119145">
+    <state width="1163" height="376" key="GridCell.Tab.0.bottom" timestamp="1603481793269">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1163" height="269" key="GridCell.Tab.0.bottom/0.0.1536.824/0.-1200.1920.1160@0.0.1536.824" timestamp="1603289076567" />
-    <state width="1163" height="376" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1603403119145" />
-    <state width="1163" height="376" key="GridCell.Tab.0.center" timestamp="1603403119144">
+    <state width="1163" height="376" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1603481793269" />
+    <state width="1163" height="376" key="GridCell.Tab.0.center" timestamp="1603481793269">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1163" height="269" key="GridCell.Tab.0.center/0.0.1536.824/0.-1200.1920.1160@0.0.1536.824" timestamp="1603289076566" />
-    <state width="1163" height="376" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1603403119144" />
-    <state width="1163" height="376" key="GridCell.Tab.0.left" timestamp="1603403119144">
+    <state width="1163" height="376" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1603481793269" />
+    <state width="1163" height="376" key="GridCell.Tab.0.left" timestamp="1603481793269">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1163" height="269" key="GridCell.Tab.0.left/0.0.1536.824/0.-1200.1920.1160@0.0.1536.824" timestamp="1603289076566" />
-    <state width="1163" height="376" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1603403119144" />
-    <state width="1163" height="376" key="GridCell.Tab.0.right" timestamp="1603403119145">
+    <state width="1163" height="376" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1603481793269" />
+    <state width="1163" height="376" key="GridCell.Tab.0.right" timestamp="1603481793269">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1163" height="269" key="GridCell.Tab.0.right/0.0.1536.824/0.-1200.1920.1160@0.0.1536.824" timestamp="1603289076566" />
-    <state width="1163" height="376" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1603403119145" />
-    <state width="1163" height="376" key="GridCell.Tab.1.bottom" timestamp="1603403119145">
+    <state width="1163" height="376" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1603481793269" />
+    <state width="1163" height="376" key="GridCell.Tab.1.bottom" timestamp="1603481793270">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1163" height="269" key="GridCell.Tab.1.bottom/0.0.1536.824/0.-1200.1920.1160@0.0.1536.824" timestamp="1603289076567" />
-    <state width="1163" height="376" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1603403119145" />
-    <state width="1163" height="376" key="GridCell.Tab.1.center" timestamp="1603403119145">
+    <state width="1163" height="376" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1603481793270" />
+    <state width="1163" height="376" key="GridCell.Tab.1.center" timestamp="1603481793270">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1163" height="269" key="GridCell.Tab.1.center/0.0.1536.824/0.-1200.1920.1160@0.0.1536.824" timestamp="1603289076567" />
-    <state width="1163" height="376" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1603403119145" />
-    <state width="1163" height="376" key="GridCell.Tab.1.left" timestamp="1603403119145">
+    <state width="1163" height="376" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1603481793270" />
+    <state width="1163" height="376" key="GridCell.Tab.1.left" timestamp="1603481793270">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1163" height="269" key="GridCell.Tab.1.left/0.0.1536.824/0.-1200.1920.1160@0.0.1536.824" timestamp="1603289076567" />
-    <state width="1163" height="376" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1603403119145" />
-    <state width="1163" height="376" key="GridCell.Tab.1.right" timestamp="1603403119145">
+    <state width="1163" height="376" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1603481793269" />
+    <state width="1163" height="376" key="GridCell.Tab.1.right" timestamp="1603481793270">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1163" height="269" key="GridCell.Tab.1.right/0.0.1536.824/0.-1200.1920.1160@0.0.1536.824" timestamp="1603289076567" />
-    <state width="1163" height="376" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1603403119145" />
+    <state width="1163" height="376" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1603481793270" />
     <state width="1147" height="559" key="GridCell.Tab.2.bottom" timestamp="1603210027980">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -367,11 +347,11 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="249" y="0" key="SettingsEditor/0.0.1536.824/0.-1200.1920.1160@0.0.1536.824" timestamp="1603055723338" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1603316078381">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1603404381268">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824/0.-1200.1920.1160@0.0.1536.824" timestamp="1603286424136" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1603316078381" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1603404381268" />
     <state x="478" y="11" width="579" height="801" key="find.popup" timestamp="1603058364822">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -380,5 +360,17 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="360" y="73" key="new project wizard/0.0.1536.824/0.-1200.1920.1160@0.0.1536.824" timestamp="1603211330959" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/measurement-ui/src/app/home/home.component.ts</url>
+          <line>10</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
