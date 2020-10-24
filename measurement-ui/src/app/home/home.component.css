@@ -1,14 +1,7 @@
 agm-map {
-  height: 570px;
-  width: 800px;
-  position: fixed;
-  right: 50px;
+  height: 600px;
+  width: 900px;
 }
+main {
 
-list {
-  position: fixed;
-  top: 80px;
-  left: 10px;
-  overflow: scroll;
-  padding-left: 150px;
 }

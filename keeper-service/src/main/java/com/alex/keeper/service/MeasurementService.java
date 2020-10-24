@@ -7,6 +7,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import reactor.core.publisher.Flux;
 
+import java.time.LocalDateTime;
+
 @Service
 @Slf4j
 public class MeasurementService {
@@ -23,5 +25,10 @@ public class MeasurementService {
     public Flux<Measurement> getAllMeasurements(){
         log.info("GET ALL MEASUREMENTS");
         return measurementRepository.findAll();
+    }
+
+    public Flux<Measurement> findAllByLocation(String location) {
+        return measurementRepository.findAllByLocationAndCreatedDateGreaterThan(location,
+                LocalDateTime.now().minusMinutes(1));
     }
 }

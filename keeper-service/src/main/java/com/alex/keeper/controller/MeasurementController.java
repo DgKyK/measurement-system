@@ -29,7 +29,7 @@ public class MeasurementController {
     @RequestMapping(method = RequestMethod.GET,
             value = "stream/measurements",
             produces = MediaType.TEXT_EVENT_STREAM_VALUE)
-    public Flux<Measurement> getAllMeasurementsStream() {
-        return measurementService.getAllMeasurements().delaySequence(Duration.ofSeconds(1));
+    public Flux<Measurement> getAllMeasurementsStream(@RequestParam String location) {
+        return measurementService.findAllByLocation(location);
     }
 }
