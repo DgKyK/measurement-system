@@ -13,5 +13,43 @@ services:
     ports:
       - "9092:9092"
     environment:
-      KAFKA_ADVERTISED_HOST_NAME: localhost
+      KAFKA_ADVERTISED_HOST_NAME: kafka
       KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+    depends_on:
+      - zookeeper
+
+  mongo:
+    image: mongo
+    container_name: mongodb
+    ports:
+      - "27017:27017"
+
+  eureka:
+    image: dgkyk/eureka:discoveryserver
+    container_name: eureka
+    ports:
+    - "8761:8761"
+
+  pie:
+    image: dgkyk/pie:service
+    container_name: pie-service
+    ports:
+    - "8080:8080"
+    depends_on:
+      - eureka
+
+  keeper:
+    image: dgkyk/keeper:service
+    container_name: keeper-service
+    ports:
+      - "8081:8081"
+    depends_on:
+      - eureka
+
+  zuul:
+    image: dgkyk/zuul:gateway
+    container_name: zuul-service
+    ports:
+    - "8083:8083"
+    depends_on:
+      - eureka

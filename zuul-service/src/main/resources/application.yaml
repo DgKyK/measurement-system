@@ -10,6 +10,18 @@ eureka:
   instance:
     preferIpAddress: true
 
+#spring:
+#  application:
+#    name: zuul-service
+#server:
+#  port: 8083
+#eureka:
+#  client:
+#    serviceUrl:
+#      defaultZone: ${EUREKA_URI:http://eureka:8761/eureka}
+#  instance:
+#    preferIpAddress: true
+
 zuul:
   routes:
     pie-service:
